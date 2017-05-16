@@ -1,4 +1,3 @@
-$CLEO
 0000: NOP
 WAIT 4500
 0AF8: samp add_message_to_chat "* Loaded hacks by SIRA (www.youtube.com/sirabots)" color -1

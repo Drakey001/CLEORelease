@@ -1,0 +1,35 @@
+0000: NOP
+WAIT 4500
+0AF8: samp add_message_to_chat "> Loaded hacks by SIRA (www.youtube.com/sirabots)" color -1
+0B34: samp register_client_command "setarmour" to_label @cmd
+0@ = 0
+
+:MAIN
+WAIT 0
+IF 0@ == 1
+THEN 
+    018C: play_sound 1052 at 0.0 0.0 0.0
+    Actor.AddArmour($PLAYER_ACTOR, 3@)
+    0AD1: show_formatted_text_highpriority "ARMOUR UPDATED. HACKS BY ~R~SIRA!" time 3000 0x0AD1
+    WAIT 350
+    0@ = 0
+END
+SAMP.CmdRet()
+JUMP @MAIN
+
+:CMD
+WAIT 0
+SAMP.IsCommandTyped(1@)
+IF
+0AD4: 2@ = scan_string 1@ format "%d" 3@v 
+ELSE_JUMP @USAGE
+0@ = 1
+SAMP.CmdRet()
+JUMP @MAIN
+
+:USAGE
+WAIT 0
+0AF8: samp add_message_to_chat "USAGE: /setarmour [amount]" color -1
+0@ = 0
+SAMP.CmdRet()
+JUMP @MAIN

@@ -1,0 +1,23 @@
+0000: NOP
+WAIT 4500
+0AF8: samp add_message_to_chat "* Loaded hacks by SIRA (www.youtube.com/sirabots)" color -1
+
+WHILE TRUE
+    WAIT 0
+    IF 0ADC: "AMMO1"
+    THEN 
+        IF 02D8: actor $PLAYER_ACTOR current_weapon == 0
+        THEN
+            0AD1: show_formatted_text_highpriority "NO WEAPON EQUIPPED!" time 2500 0x0AD1
+            WAIT 350
+        ELSE
+            018C: play_sound 1052 at 0.0 0.0 0.0 
+            0470: 0@ = actor $PLAYER_ACTOR current_weapon 
+            041A: 1@ = actor $PLAYER_ACTOR weapon 0@ ammo 
+            1@ += 1 
+            Actor.SetWeaponAmmo($PLAYER_ACTOR, 0@, 1@)
+            0AD1: show_formatted_text_highpriority "AMMO HACK BY ~R~SIRA" time 2500 0x0AD1
+            WAIT 350
+        END
+    END
+END
