@@ -12,7 +12,7 @@ Preview: https://www.youtube.com/watch?v=AevB5DdLGXg
 
 <b>PR-RP Ammo hack v2:</b><br>
 Command: /setammo [amount]<br>
-Preview: https://www.youtube.com/watch?v=4NynDmJLUDs
+Preview: https://www.youtube.com/watch?v=AevB5DdLGXg
 
 <b>PR-RP Armour hack:</b><br>
 Command: /setarmour [amount]<br>
