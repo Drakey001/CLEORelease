@@ -35,4 +35,4 @@ Key: Type 'LOVESIRA' to activate/deactivate<br>
 Preview: N/A
 
 I have tested all PR-RP hacks on the latest gamemode version, which currently is <i>PR-RP R.18.224</i>, and they all work fine.<br>
-Please contact me on <b>sirasjad@gmail.com</b> if there are any problems. Thanks!
+Please contact me on sirasjad@gmail.com if there are any problems. Thanks!
