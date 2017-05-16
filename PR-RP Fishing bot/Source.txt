@@ -1,0 +1,31 @@
+$CLEO
+0000: NOP
+WAIT 4500
+0AF8: samp add_message_to_chat "* Loaded hacks by SIRA (www.youtube.com/sirabots)" color -1
+
+:CHECK
+WHILE TRUE
+    WAIT 0
+    IF 0ADC: "FISH"
+    THEN 
+        0B12: 0@ = 0@ XOR 1
+        IF 0@ == 1
+        THEN
+            0AD1: show_formatted_text_highpriority "FISHING BOT BY ~R~SIRA" time 2500 0x0AD1
+        ELSE
+            0AD1: show_formatted_text_highpriority "FISHING BOT DEACTIVATED" time 2500 0x0AD1
+        END
+    END
+    
+    IF 0@ == 1
+    THEN
+        GOTO @FISH
+    END
+END
+        
+:FISH
+WAIT 0
+0AF9: samp say_msg "/fish"
+018C: play_sound 1052 at 0.0 0.0 0.0
+WAIT 27500
+GOTO @CHECK

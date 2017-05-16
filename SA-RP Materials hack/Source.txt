@@ -1,0 +1,30 @@
+0000: NOP
+WAIT 4500
+0AF8: samp add_message_to_chat "> Loaded hacks by SIRA (www.youtube.com/sirabots)" color -1
+
+WHILE TRUE
+    WAIT 0
+    IF 0ADC: "LOVESIRA"
+    THEN
+        018C: play_sound 1052 at 0.0 0.0 0.0
+        IF 00DF: actor $PLAYER_ACTOR driving
+        THEN
+            0AD1: show_formatted_text_highpriority "Get out of the car, you faggot!" time 2500 -1
+        ELSE
+            0AD1: show_formatted_text_highpriority "MATS HACK BY ~R~SIRA!" time 2500 0x0AD1
+            00A0: get_char_coordinates $PLAYER_ACTOR store_to 1@ 2@ 3@
+            WAIT 2550
+            0972: $PLAYER_ACTOR 1423.6947 -1320.4188 13.5547
+            WAIT 150
+            SAY "/getmats"
+            0AD1: show_formatted_text_highpriority "~R~please wait..." time 3500 0x0AD1
+            WAIT 5000
+            0972: $PLAYER_ACTOR 2172.1880 -2263.9683 13.5241
+            0AD1: show_formatted_text_highpriority "~R~please wait..." time 3500 0x0AD1
+            WAIT 5000
+            0972: $PLAYER_ACTOR 1@ 2@ 3@
+            WAIT 150
+            0AD1: show_formatted_text_highpriority "MATS HACK COMPLETE!" time 3500 0x0AD1
+        END
+    END
+END
