@@ -32,7 +32,7 @@ Preview: https://www.youtube.com/watch?v=Iwdk0ipqhX4
 
 <b>SA-RP Materials hack:</b><br>
 Key: Type 'LOVESIRA' to activate/deactivate<br>
-Preview: https://www.youtube.com/watch?v=Iwdk0ipqhX4
+Preview: N/A
 
 I have tested all PR-RP hacks on the latest gamemode version, which currently is <i>PR-RP R.18.224</i>, and they all work fine.<br>
 Please contact me on <b>sirasjad@gmail.com</b> if there are any problems. Thanks!
